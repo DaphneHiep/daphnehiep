@@ -6,7 +6,8 @@ body {
 .logo {
 height: 13em; 
 width: 14em;
-border: solid black;   
+border: ridge  10px;
+border-color: #7EBBF9;
 background-color: white;
 margin: 2em 6em 0em 2em;
 }
@@ -25,13 +26,17 @@ header img {
 header ul li {
     font-size: 20pt;
     padding: 10px 20px 10px 20px;
-    border: solid black;
+    border: solid black 4px;
     background-color: white;
     display: inline;
     margin-right: 3em;
+    transition: ease-in 0.2s;
+    
 }
-ul li :hover {
-    background-color:  #7EBBF9;
+
+header ul  :hover {
+    font-size: 24pt;
+    background-color: #7EBBF9;
 
 }
 main {
@@ -42,14 +47,19 @@ main h1 {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    border-radius: 0.5em;
+
 }
 main div h1 {
-    background-color: #7EBBF9;
-    max-width: 9em;
+    background-color: #618CBD;
+    max-width: 10em;
     padding: 1em 1em 1em 1em;
     color: white;
     margin: 1em 1em 0em 2em;
     font-size: 25pt;
+    border: ridge 0.4em;
+    border-color:#7EBBF9;
+
 }
 main div:first-of-type {
     margin: 1em 1em 1em 1em;
@@ -59,7 +69,7 @@ main div:first-of-type {
 
 main div:first-of-type img {
     height: 20em;
-    margin: 1em 3em 1em 3em ;
+    margin: 1em 3em 1em 0.8em ;
 }
 
 main div:last-of-type{
@@ -75,12 +85,13 @@ main section {
     display: flex;
 }
 
-p {
+main p {
     font-size: 15pt;
     margin: 2em;
 }
 
 ol {
+    width: 40em;
     font-size: 15pt;
     list-style-image: url("media/Screenshot\ 2024-10-08\ at\ 13.20.14.png");
 }
@@ -95,26 +106,19 @@ main div:last-child {
 }
 
   section>img {
-    border: solid black;
-
+    border: solid  2em;
+    border-color: #7EBBF9;
+    border-style: solid;
   }
 
-.ad {
-    margin: 1em 1em 1em 1em;
-    background-color: #1DB954;
-    border: solid black;
-    border-radius: 2em;
-    width: 20em;
-    padding: 1em;
-}
+  section>img:hover {
+    border-color: #618CBD;
+  }
 
 footer {
     height: 15em;
 }
-.spotify {
-    height: 6em;
-    border-style: none;
-}
+
 
 footer h1 {
     color: white;
@@ -146,4 +150,22 @@ footer p {
 
 div:first-of-type .intro {
     height: 15em;
+}
+
+.spotify {
+    height: 25em;
+    display: flex;
+    list-style: none;
+}
+
+.spotify img{
+    border: solid #7EBBF9 1em;
+    border-radius: 1em;
+    width: 25em;
+    transition: 0.5s;
+}
+
+.spotify img:hover{
+    border-color: #618CBD;
+    border-radius: 5em;
 }
